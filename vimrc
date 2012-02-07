@@ -14,7 +14,7 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 set number                      " need those line numbers
 set ruler                       " show the line/column number of the cursor position
-set shell=sh                    " hack for rvm
+" set shell=sh                    " hack for rvm
 "" Whitespace
 set nowrap                      " wrap lines, switch with set nowrap
 set textwidth=78                "
@@ -41,11 +41,11 @@ syntax enable
 " set background=dark             " or light
 " colorscheme solarized           " can't work with anything else
 " highlight LineNr ctermfg=darkgrey
-set cursorline                  " highlight current line
+" set cursorline                  " highlight current line
 
 " Window
 " set cmdheight=2                 " number of lines for the command line
-" set laststatus=2                " always have a status line
+set laststatus=2                " always have a status line
 " set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 " set showtabline=2               " always show tab bar
 set winwidth=84                 " 
@@ -102,15 +102,15 @@ map <Down> :echo "nooooo!"<cr>
 
 " Plugin mappings
 " Fugutive shortcuts
-map :gs :Gstatus<cr>
-map :gb :Gblame<cr>
-map :gd :Gdiff<cr>
+" map :gs :Gstatus<cr>
+" map :gb :Gblame<cr>
+" map :gd :Gdiff<cr>
 
 "  Ack
 map <leader>/ :Ack<space>
 
 " Powerline
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 " Map keys to go to specific files
 map <leader>gr :topleft :split config/routes.rb<cr>
