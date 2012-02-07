@@ -36,11 +36,11 @@ set wildmenu                    " enhanced command line completion
 set wildignore+=*.o,*.obj,.bundle,coverage,.DS_Store,_html,.git,*.rbc,*.class,.svn,vendor/gems/*,vendor/rails/*
 
 "" Colors
-set term=xterm-256color
+" set term=xterm-256color
 syntax enable
-set background=dark             " or light
-colorscheme solarized           " can't work with anything else
-highlight LineNr ctermfg=darkgrey
+" set background=dark             " or light
+" colorscheme solarized           " can't work with anything else
+" highlight LineNr ctermfg=darkgrey
 set cursorline                  " highlight current line
 
 " Window
