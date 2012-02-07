@@ -45,7 +45,7 @@ set cursorline                  " highlight current line
 
 " Window
 " set cmdheight=2                 " number of lines for the command line
-set laststatus=2                " always have a status line
+" set laststatus=2                " always have a status line
 " set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 " set showtabline=2               " always show tab bar
 set winwidth=84                 " 
