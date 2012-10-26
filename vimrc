@@ -95,10 +95,10 @@ command! Wq :wq
 command! E :e
 
 " force vim
-map <Left> :echo "damnit!"<cr>
-map <Right> :echo "you suck!"<cr>
-map <Up> :echo "this is why you fail"<cr>
-map <Down> :echo "nooooo!"<cr>
+" map <Left> :echo "damnit!"<cr>
+" map <Right> :echo "you suck!"<cr>
+" map <Up> :echo "this is why you fail"<cr>
+" map <Down> :echo "nooooo!"<cr>
 
 " Plugin mappings
 " Fugutive shortcuts
