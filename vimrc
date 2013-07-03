@@ -39,7 +39,7 @@ set wildignore+=*.o,*.obj,.bundle,coverage,.DS_Store,_html,.git,*.rbc,*.class,.s
 " set term=xterm-256color
 syntax enable
 " set background=dark             " or light
-" colorscheme solarized           " can't work with anything else
+colorscheme desert " can't work with anything else
 " highlight LineNr ctermfg=darkgrey
 " set cursorline                  " highlight current line
 
