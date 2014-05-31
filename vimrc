@@ -13,13 +13,14 @@ set encoding=utf-8              " sensible encoding
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 set number                      " need those line numbers
+set rnu
 set ruler                       " show the line/column number of the cursor position
 " set shell=sh                    " hack for rvm
 "" Whitespace
 set nowrap                      " wrap lines, switch with set nowrap
 set textwidth=78                "
 set linebreak                   " break line for wrapping at end of a word
-set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
+set tabstop=4 shiftwidth=4      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set scrolloff=3                 " Minimum number of screen lines to keep above/below the cursor
@@ -210,3 +211,4 @@ nnoremap <c-w>e :call ScrollOtherWindowDown(v:count)<cr>
 
 " Give a shortcut key to NERD Tree
 map <F2> :NERDTreeToggle<CR>
+
