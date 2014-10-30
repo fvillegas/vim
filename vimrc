@@ -14,6 +14,7 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 set number                      " need those line numbers
 set ruler                       " show the line/column number of the cursor position
+set rnu
 " set shell=sh                    " hack for rvm
 "" Whitespace
 set nowrap                      " wrap lines, switch with set nowrap
@@ -39,7 +40,7 @@ set wildignore+=*.o,*.obj,.bundle,coverage,.DS_Store,_html,.git,*.rbc,*.class,.s
 " set term=xterm-256color
 syntax enable
 " set background=dark             " or light
-" colorscheme solarized           " can't work with anything else
+colorscheme desert           " can't work with anything else
 " highlight LineNr ctermfg=darkgrey
 " set cursorline                  " highlight current line
 
