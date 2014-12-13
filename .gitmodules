@@ -40,3 +40,6 @@
 [submodule "YouCompleteMe"]
 	path = YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule "bundle/surround"]
+    path = bundle/surround
+    url = https://github.com/tpope/vim-surround]
