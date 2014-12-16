@@ -31,3 +31,15 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround
+[submodule "bundle/coffeescript"]
+	path = bundle/coffeescript
+	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule "bundle/handlebars"]
+	path = bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
+[submodule "bundle/arduino-syntax"]
+    path = bundle/arudino-syntax
+    url = https://github.com/vim-scripts/Arduino-syntax-file
+[submodule "YouCompleteMe"]
+	path = YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe

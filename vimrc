@@ -24,6 +24,7 @@ set tabstop=4 shiftwidth=4      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set scrolloff=3                 " Minimum number of screen lines to keep above/below the cursor
+set smarttab
 
 " indent code inside p tags
 autocmd TabEnter,WinEnter,BufWinEnter *.html,*.erb let g:html_indent_tags = g:html_indent_tags.'\|p'
@@ -45,10 +46,10 @@ colorscheme desert           " can't work with anything else
 " set cursorline                  " highlight current line
 
 " Window
-" set cmdheight=2                 " number of lines for the command line
+set cmdheight=1                 " number of lines for the command line
 set laststatus=2                " always have a status line
-" set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
-" set showtabline=2               " always show tab bar
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+set showtabline=2               " always show tab bar
 set winwidth=84                 " 
 
 " Mappings
@@ -83,6 +84,30 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+"autocomplete Parenthesis
+""When you type an open brace, this will automatically
+"insert a closing brace on the same line, after the cursor.
+""If you quickly hit Enter after the open brace, (to begin
+"a code block), the closing brace will be inserted on the
+""line below the cursor. If you quickly press the open brace
+"key again after the open brace, Vim won't insert anything extra,
+"" you'll just get a single open brace. Finally, if you quickly
+"type an open and close brace, Vim will not do anything special.
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+
+inoremap (      ()<Left>
+inoremap (<CR>  (<CR>)<Esc>O
+inoremap ((     (
+inoremap ()     ()
+
+inoremap [      []<Left>
+inoremap [<CR>  [<CR>]<Esc>O
+inoremap [[     [
+inoremap []     []
+
 " open split scratch buffer
 nmap <leader>; :Sscratch<cr>
 
@@ -111,7 +136,7 @@ command! E :e
 map <leader>/ :Ack<space>
 
 " Powerline
-" let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 
 " Map keys to go to specific files
 map <leader>gr :topleft :split config/routes.rb<cr>
@@ -211,4 +236,5 @@ nnoremap <c-w>e :call ScrollOtherWindowDown(v:count)<cr>
 
 " Give a shortcut key to NERD Tree
 map <F2> :NERDTreeToggle<CR>
-
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
