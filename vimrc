@@ -20,14 +20,14 @@ set rnu
 set nowrap                      " wrap lines, switch with set nowrap
 set textwidth=78                "
 set linebreak                   " break line for wrapping at end of a word
-set tabstop=4 shiftwidth=4      " a tab is two spaces (or set this to 4)
+set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set scrolloff=3                 " Minimum number of screen lines to keep above/below the cursor
 set smarttab
 
 " indent code inside p tags
-autocmd TabEnter,WinEnter,BufWinEnter *.html,*.erb let g:html_indent_tags = g:html_indent_tags.'\|p'
+"autocmd TabEnter,WinEnter,BufWinEnter *.html,*.erb let g:html_indent_tags = g:html_indent_tags.'\|p'
 
 "" Searching
 set hlsearch                    " highlight matches
