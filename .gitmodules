@@ -40,9 +40,9 @@
 [submodule "bundle/arduino-syntax"]
     path = bundle/arudino-syntax
     url = https://github.com/vim-scripts/Arduino-syntax-file
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe
 [submodule "bundle/surround"]
     path = bundle/surround
     url = https://github.com/tpope/vim-surround]
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
