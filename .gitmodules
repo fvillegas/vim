@@ -38,11 +38,8 @@
 	path = bundle/handlebars
 	url = git://github.com/nono/vim-handlebars.git
 [submodule "bundle/arduino-syntax"]
-    path = bundle/arudino-syntax
-    url = https://github.com/vim-scripts/Arduino-syntax-file
-[submodule "bundle/surround"]
-    path = bundle/surround
-    url = https://github.com/tpope/vim-surround]
+	path = bundle/arduino-syntax
+	url = https://github.com/vim-scripts/Arduino-syntax-file
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
