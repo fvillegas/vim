@@ -40,3 +40,6 @@
 [submodule "bundle/arduino-syntax"]
 	path = bundle/arduino-syntax
 	url = https://github.com/vim-scripts/Arduino-syntax-file
+[submodule "bundle/go"]
+	path = bundle/go
+	url = https://github.com/fatih/vim-go.git
