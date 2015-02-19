@@ -25,6 +25,7 @@ set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set scrolloff=3                 " Minimum number of screen lines to keep above/below the cursor
 set smarttab
+set autoindent
 
 " indent code inside p tags
 "autocmd TabEnter,WinEnter,BufWinEnter *.html,*.erb let g:html_indent_tags = g:html_indent_tags.'\|p'
