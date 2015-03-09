@@ -237,8 +237,8 @@ nnoremap <c-w>e :call ScrollOtherWindowDown(v:count)<cr>
 
 " Give a shortcut key to NERD Tree
 map <F2> :NERDTreeToggle<CR>
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
+" autocmd VimEnter * NERDTree
+" autocmd BufEnter * NERDTreeMirror
 
 " vim-jsbeautify
 map <c-f> :call JsBeautify()<cr>

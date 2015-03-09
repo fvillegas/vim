@@ -3,5 +3,5 @@ set fuoptions=maxhorz,maxvert
 set guioptions-=T
 set guioptions-=r
 set guioptions-=L
-set guifont=Menlo:h16
+set guifont=Menlo:h14
 set t_Co=256
